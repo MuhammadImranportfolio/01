@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <title>Muhammad Imran | Biotechnology Researcher</title>
 
     <meta name="description"
-          content="Personal portfolio of Muhammad Imran, Biotechnology Researcher specializing in microalgae, algae-based biostimulants, and sustainable biotechnology.">
+        content="Personal portfolio of Muhammad Imran, Biotechnology Researcher specializing in microalgae, algae-based biostimulants, and sustainable biotechnology.">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -27,7 +29,11 @@
             line-height: 1.6;
         }
 
-        /* NAVIGATION */
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
         nav {
             width: 100%;
             background: #ffffff;
@@ -64,7 +70,11 @@
             color: #16794c;
         }
 
-        /* HERO */
+
+        /* =========================
+           HERO
+        ========================= */
+
         .hero {
             min-height: 90vh;
             display: flex;
@@ -148,7 +158,11 @@
             color: white;
         }
 
-        /* PROFILE PHOTO */
+
+        /* =========================
+           PROFILE PHOTO
+        ========================= */
+
         .hero-image {
             flex: 0 0 330px;
             display: flex;
@@ -164,7 +178,11 @@
             box-shadow: 0 12px 35px rgba(0,0,0,0.18);
         }
 
-        /* SECTIONS */
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
         section {
             padding: 80px 8%;
         }
@@ -184,7 +202,11 @@
             color: #69766f;
         }
 
-        /* ABOUT */
+
+        /* =========================
+           ABOUT
+        ========================= */
+
         .about {
             background: white;
         }
@@ -197,7 +219,126 @@
             color: #56635d;
         }
 
-        /* AREAS */
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .experience-section {
+            background: #f5f8f6;
+        }
+
+        .experience-container {
+            max-width: 1050px;
+            margin: auto;
+            position: relative;
+        }
+
+        .experience-container::before {
+            content: "";
+            position: absolute;
+            left: 28px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #b9dcc9;
+        }
+
+        .experience-item {
+            position: relative;
+            padding-left: 75px;
+            margin-bottom: 35px;
+        }
+
+        .experience-dot {
+            position: absolute;
+            left: 14px;
+            top: 25px;
+            width: 30px;
+            height: 30px;
+            background: #16804f;
+            border: 6px solid #dff1e7;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .experience-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+            border: 1px solid #e5eee8;
+            transition: 0.3s;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.11);
+        }
+
+        .experience-card h3 {
+            font-size: 25px;
+            color: #173b2a;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-size: 17px;
+            font-weight: bold;
+            color: #16804f;
+            margin-bottom: 4px;
+        }
+
+        .employment {
+            font-size: 14px;
+            color: #66756d;
+            margin-bottom: 3px;
+        }
+
+        .experience-date {
+            font-size: 14px;
+            color: #7b8781;
+            margin-bottom: 18px;
+        }
+
+        .experience-card ul {
+            padding-left: 20px;
+            color: #56635d;
+        }
+
+        .experience-card li {
+            margin-bottom: 8px;
+        }
+
+        .project-description {
+            color: #56635d;
+            background: #f1f8f4;
+            border-left: 4px solid #16804f;
+            padding: 15px 18px;
+            border-radius: 7px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .skill {
+            background: #e8f5ed;
+            color: #16794c;
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           RESEARCH
+        ========================= */
+
         .cards {
             max-width: 1100px;
             margin: auto;
@@ -233,7 +374,11 @@
             color: #68756e;
         }
 
-        /* CONTACT */
+
+        /* =========================
+           CONTACT
+        ========================= */
+
         .contact {
             background: #173b2a;
             color: white;
@@ -255,7 +400,11 @@
             color: #173b2a;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
             background: #10281d;
             color: #b9c9c0;
@@ -264,7 +413,11 @@
             font-size: 14px;
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 800px) {
 
             nav {
@@ -320,7 +473,28 @@
             .cards {
                 grid-template-columns: 1fr;
             }
+
+            .experience-container::before {
+                left: 18px;
+            }
+
+            .experience-item {
+                padding-left: 50px;
+            }
+
+            .experience-dot {
+                left: 4px;
+            }
+
+            .experience-card {
+                padding: 22px;
+            }
+
+            .experience-card h3 {
+                font-size: 22px;
+            }
         }
+
 
         @media (max-width: 500px) {
 
@@ -340,27 +514,69 @@
             .section-title h2 {
                 font-size: 30px;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="logo">Muhammad Imran</div>
 
-<ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <div class="logo">
+            Muhammad Imran
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="#research">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
     </nav>
 
 
-    <!-- HERO SECTION -->
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
     <section class="hero" id="home">
 
         <div class="hero-container">
@@ -382,6 +598,7 @@
                 </p>
 
                 <div class="buttons">
+
                     <a href="#about" class="btn btn-primary">
                         Explore My Work
                     </a>
@@ -389,12 +606,14 @@
                     <a href="#contact" class="btn btn-secondary">
                         Contact Me
                     </a>
+
                 </div>
 
             </div>
 
 
-            <!-- YOUR ACTUAL GITHUB PHOTO -->
+            <!-- YOUR PHOTO -->
+
             <div class="hero-image">
 
                 <img
@@ -410,13 +629,25 @@
     </section>
 
 
-    <!-- ABOUT -->
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
     <section class="about" id="about">
 
         <div class="section-title">
-            <h2>About Me</h2>
-            <p>Biotechnology • Microalgae • Sustainable Research</p>
+
+            <h2>
+                About Me
+            </h2>
+
+            <p>
+                Biotechnology • Microalgae • Sustainable Research
+            </p>
+
         </div>
+
 
         <div class="about-content">
 
@@ -441,12 +672,386 @@
     </section>
 
 
-    <!-- RESEARCH -->
+
+    <!-- =========================
+         EXPERIENCE
+    ========================= -->
+
+    <section class="experience-section" id="experience">
+
+        <div class="section-title">
+
+            <h2>
+                Professional <span style="color:#16804f;">Experience</span>
+            </h2>
+
+            <p>
+                Academic, research and professional experience
+            </p>
+
+        </div>
+
+
+        <div class="experience-container">
+
+
+            <!-- 1. BIOENERGY RESEARCH CENTRE -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Graduate Student Researcher
+                    </h3>
+
+                    <div class="company">
+                        Bioenergy Research Centre
+                    </div>
+
+                    <div class="employment">
+                        Full-time · On-site
+                    </div>
+
+                    <div class="experience-date">
+                        September 2025 – Present
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Conducting research on indigenous microalgal
+                            strains for sustainable agricultural
+                            applications.
+                        </li>
+
+                        <li>
+                            Working on algae-based biostimulants, including
+                            microalgal cultivation, biomass processing,
+                            extraction, and evaluation.
+                        </li>
+
+                        <li>
+                            Exploring microalgae for carbon capture,
+                            sustainable resource recovery, and circular
+                            bioeconomy applications.
+                        </li>
+
+                        <li>
+                            Gaining hands-on experience in microalgal
+                            cultivation, harvesting, biochemical analysis,
+                            and research experimentation.
+                        </li>
+
+                    </ul>
+
+
+                    <div class="skills">
+
+                        <span class="skill">
+                            Microscopy
+                        </span>
+
+                        <span class="skill">
+                            Microalgae Cultivation
+                        </span>
+
+                        <span class="skill">
+                            Biostimulants
+                        </span>
+
+                        <span class="skill">
+                            Biomass Processing
+                        </span>
+
+                        <span class="skill">
+                            Biochemical Analysis
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 2. YFDP PAK -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Research Intern
+                    </h3>
+
+                    <div class="company">
+                        YFDP PAK
+                    </div>
+
+                    <div class="employment">
+                        Internship · Punjab, Pakistan
+                    </div>
+
+                    <div class="experience-date">
+                        July 2026
+                    </div>
+
+
+                    <p class="project-description">
+
+                        Participated in a
+                        <strong>
+                            3-Day Virtual Internship on "Sales & Marketing
+                            in Food, Agriculture & other Sectors in Pakistan."
+                        </strong>
+
+                    </p>
+
+
+                    <div class="skills">
+
+                        <span class="skill">
+                            Research
+                        </span>
+
+                        <span class="skill">
+                            Agriculture
+                        </span>
+
+                        <span class="skill">
+                            Food Sector
+                        </span>
+
+                        <span class="skill">
+                            Sales & Marketing
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 3. AKBAR ASSOCIATES GROUP -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Lead Biologist
+                    </h3>
+
+                    <div class="company">
+                        Akbar Associates Group
+                    </div>
+
+                    <div class="employment">
+                        Full-time · On-site
+                    </div>
+
+                    <div class="experience-date">
+                        October 2024 – September 2025 · Islamabad, Pakistan
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Reviewed and evaluated results of microbiological
+                            tests.
+                        </li>
+
+                        <li>
+                            Recommended and outlined investigative actions.
+                        </li>
+
+                        <li>
+                            Scheduled and supervised the collection of
+                            samples in the field.
+                        </li>
+
+                    </ul>
+
+
+                    <div class="skills">
+
+                        <span class="skill">
+                            Field Biology
+                        </span>
+
+                        <span class="skill">
+                            Microbiology
+                        </span>
+
+                        <span class="skill">
+                            Research
+                        </span>
+
+                        <span class="skill">
+                            Sample Collection
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 4. GCUF -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Research Project
+                    </h3>
+
+                    <div class="company">
+                        Government College University, Faisalabad
+                    </div>
+
+                    <div class="employment">
+                        Full-time · On-site
+                    </div>
+
+                    <div class="experience-date">
+                        September 2020 – August 2024 · Punjab, Pakistan
+                    </div>
+
+
+                    <p class="project-description">
+
+                        <strong>
+                            Biological Synthesis of ZnO Nanoparticles
+                        </strong>
+                        from Olive Leaves Extract and Evaluation of their
+                        Antimicrobial Activity against
+                        <em>Pseudomonas aeruginosa</em>.
+
+                    </p>
+
+
+                    <div class="skills">
+
+                        <span class="skill">
+                            Cell Culture
+                        </span>
+
+                        <span class="skill">
+                            Nanotechnology
+                        </span>
+
+                        <span class="skill">
+                            Antimicrobial Research
+                        </span>
+
+                        <span class="skill">
+                            Online Research
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 5. AYUB AGRICULTURAL RESEARCH INSTITUTE -->
+
+            <div class="experience-item">
+
+                <div class="experience-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Research Intern
+                    </h3>
+
+                    <div class="company">
+                        Ayub Agricultural Research Institute, Faisalabad
+                    </div>
+
+                    <div class="employment">
+                        Full-time · Punjab, Pakistan
+                    </div>
+
+                    <div class="experience-date">
+                        August 2023 – September 2023
+                    </div>
+
+
+                    <p>
+                        Completed a research internship involving practical
+                        laboratory and biological research activities at the
+                        Ayub Agricultural Research Institute.
+                    </p>
+
+
+                    <div class="skills">
+
+                        <span class="skill">
+                            PCR
+                        </span>
+
+                        <span class="skill">
+                            SDS-PAGE
+                        </span>
+
+                        <span class="skill">
+                            Molecular Biology
+                        </span>
+
+                        <span class="skill">
+                            Laboratory Research
+                        </span>
+
+                        <span class="skill">
+                            Microbiology
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESEARCH
+    ========================= -->
+
     <section id="research">
 
         <div class="section-title">
 
-            <h2>Research Interests</h2>
+            <h2>
+                Research Interests
+            </h2>
 
             <p>
                 Areas I am interested in exploring and developing
@@ -457,11 +1062,16 @@
 
         <div class="cards">
 
+
             <div class="card">
 
-                <div class="card-icon">🧬</div>
+                <div class="card-icon">
+                    🧬
+                </div>
 
-                <h3>Microalgae Biotechnology</h3>
+                <h3>
+                    Microalgae Biotechnology
+                </h3>
 
                 <p>
                     Research and applications involving microalgae,
@@ -473,9 +1083,13 @@
 
             <div class="card">
 
-                <div class="card-icon">🌱</div>
+                <div class="card-icon">
+                    🌱
+                </div>
 
-                <h3>Algae-Based Biostimulants</h3>
+                <h3>
+                    Algae-Based Biostimulants
+                </h3>
 
                 <p>
                     Exploring algae-derived compounds and their potential
@@ -487,9 +1101,13 @@
 
             <div class="card">
 
-                <div class="card-icon">🌍</div>
+                <div class="card-icon">
+                    🌍
+                </div>
 
-                <h3>Sustainable Biotechnology</h3>
+                <h3>
+                    Sustainable Biotechnology
+                </h3>
 
                 <p>
                     Developing and understanding biological approaches
@@ -499,15 +1117,22 @@
 
             </div>
 
+
         </div>
 
     </section>
 
 
-    <!-- CONTACT -->
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
     <section class="contact" id="contact">
 
-        <h2>Let's Connect</h2>
+        <h2>
+            Let's Connect
+        </h2>
 
         <p>
             Interested in biotechnology, microalgae research,
@@ -524,7 +1149,11 @@
     </section>
 
 
-    <!-- FOOTER -->
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
     <footer>
 
         <p>
@@ -533,5 +1162,7 @@
 
     </footer>
 
+
 </body>
+
 </html>
