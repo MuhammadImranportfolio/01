@@ -1,12 +1,12 @@
 /* ===== Muhammad Imran - Portfolio styles ===== */
 :root{
-  --bg:#EEF4EF; --surface:#FFFFFF; --ink:#14261D; --muted:#4F6358;
-  --accent:#17734A; --accent-ink:#FFFFFF; --line:#D0DDD3;
+  --bg:#EAF5EE; --surface:#FFFFFF; --ink:#0B2A22; --muted:#3F6357;
+  --accent:#0C7A54; --accent-ink:#FFFFFF; --line:#C5DDCF; --pond:#0B3D34; --lime:#8FD14F;
   --head:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
   --body:'Instrument Sans','Segoe UI',Arial,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0E1A14;--surface:#16261D;--ink:#E6F0E9;--muted:#9BB3A5;--accent:#5FD39A;--accent-ink:#0E1A14;--line:#25382D}
+  :root{--bg:#0A1712;--surface:#11241C;--ink:#E4F2EA;--muted:#96B5A5;--accent:#6FE0A8;--accent-ink:#0A1712;--line:#1F3A2E;--pond:#08302A}
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -105,3 +105,17 @@ textarea{min-height:150px;resize:vertical}
 
 .rows .links{margin-top:10px;font-weight:600}
 .hero .tags{margin-top:26px}
+
+/* ===== Microalgae hero ===== */
+.hero{position:relative;background:var(--pond);color:#EAF7EF;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.hero .cells{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.hero .lead{color:#BFE0CF}
+.hero .btn-primary{background:var(--lime);border-color:var(--lime);color:#0B2A22}
+.hero .btn-ghost{color:#EAF7EF;border-color:#EAF7EF}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero .tags li{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25);color:#E3F4EA}
+.hero .avatar{background:#12594C;color:#EAF7EF;border:5px solid var(--lime)}
+.rows h3,.skills-grid h3{color:var(--ink)}
+.tags li{border-color:var(--accent);color:var(--ink)}
+.site-header{border-bottom:3px solid var(--lime)}

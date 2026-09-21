@@ -7,9 +7,15 @@ if (btn && nav) {
     btn.setAttribute('aria-expanded', open);
   });
 }
-// Profile photo fallback: show initials if images/profile.jpg is missing
+// Profile photo: tries several file names, shows initials "MI" if none is found
 document.querySelectorAll('.avatar img').forEach(img => {
-  img.addEventListener('error', () => img.remove());
+  const options = ['images/profile.jpg','images/profile.jpeg','images/profile.png','images/profile.webp','images/profile.JPG','images/profile.PNG'];
+  let i = 0;
+  img.addEventListener('error', () => {
+    i++;
+    if (i < options.length) { img.src = options[i]; } else { img.remove(); }
+  });
+  img.src = options[0];
 });
 // Footer year
 document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
