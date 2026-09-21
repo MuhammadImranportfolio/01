@@ -1,12 +1,12 @@
 /* ===== Muhammad Imran - Portfolio styles ===== */
 :root{
-  --bg:#EDF1F5; --surface:#FFFFFF; --ink:#16213A; --muted:#56627A;
-  --accent:#2450D6; --accent-ink:#FFFFFF; --line:#D3DBE6;
+  --bg:#EEF4EF; --surface:#FFFFFF; --ink:#14261D; --muted:#4F6358;
+  --accent:#17734A; --accent-ink:#FFFFFF; --line:#D0DDD3;
   --head:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
   --body:'Instrument Sans','Segoe UI',Arial,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0F1626;--surface:#17203A;--ink:#E8EDF7;--muted:#9AA7C0;--accent:#7C9CFF;--accent-ink:#0F1626;--line:#27324F}
+  :root{--bg:#0E1A14;--surface:#16261D;--ink:#E6F0E9;--muted:#9BB3A5;--accent:#5FD39A;--accent-ink:#0E1A14;--line:#25382D}
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -102,3 +102,6 @@ textarea{min-height:150px;resize:vertical}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .avatar>*{grid-area:1/1}
+
+.rows .links{margin-top:10px;font-weight:600}
+.hero .tags{margin-top:26px}
