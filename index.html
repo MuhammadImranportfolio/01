@@ -7,955 +7,212 @@
     <title>Muhammad Imran | Biotechnology Researcher</title>
 
     <meta name="description"
-        content="Muhammad Imran - Biotechnology Researcher specializing in microalgae, biostimulants, environmental biotechnology, and sustainable agriculture.">
+          content="Muhammad Imran — M.Phil. Biotechnology researcher working on microalgae, algae-based biostimulants, sustainable agriculture, carbon capture and environmental biotechnology.">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7faf9;
-            color: #222;
-            line-height: 1.6;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1150px;
-            margin: auto;
-        }
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.96);
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-            backdrop-filter: blur(8px);
-        }
-
-        .nav-container {
-            width: 90%;
-            max-width: 1150px;
-            margin: auto;
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-size: 23px;
-            font-weight: bold;
-            color: #126b4f;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            font-weight: 600;
-            color: #333;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #126b4f;
-        }
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            min-height: 100vh;
-            padding-top: 100px;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, #e9f8f1, #f8fcfa);
-        }
-
-        .hero-content {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            align-items: center;
-            gap: 60px;
-        }
-
-        .hero-text h1 {
-            font-size: 54px;
-            line-height: 1.15;
-            color: #123c2f;
-            margin-bottom: 15px;
-        }
-
-        .hero-text h2 {
-            font-size: 24px;
-            color: #126b4f;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            color: #555;
-            max-width: 650px;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 13px 24px;
-            border-radius: 7px;
-            font-weight: bold;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .btn-primary {
-            background: #126b4f;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #0d543e;
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            border: 2px solid #126b4f;
-            color: #126b4f;
-            background: transparent;
-        }
-
-        .btn-outline:hover {
-            background: #126b4f;
-            color: white;
-        }
-
-        .hero-image {
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero-image img {
-            width: 310px;
-            height: 310px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 8px solid white;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        /* =========================
-           GENERAL SECTIONS
-        ========================= */
-
-        .section {
-            padding: 90px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            color: #123c2f;
-            margin-bottom: 50px;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: "";
-            width: 65px;
-            height: 4px;
-            background: #126b4f;
-            display: block;
-            margin: 12px auto 0;
-            border-radius: 10px;
-        }
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        #about {
-            background: white;
-        }
-
-        .about-content {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .about-content p {
-            color: #555;
-            font-size: 17px;
-            margin-bottom: 18px;
-        }
-
-        .about-highlight {
-            margin-top: 30px;
-            padding: 25px;
-            background: #e9f8f1;
-            border-left: 5px solid #126b4f;
-            border-radius: 8px;
-            text-align: left;
-        }
-
-        .about-highlight strong {
-            color: #126b4f;
-        }
-
-        /* =========================
-           EXPERIENCE / EDUCATION / PROJECTS TIMELINE
-        ========================= */
-
-        .experience-timeline {
-            max-width: 950px;
-            margin: auto;
-            position: relative;
-        }
-
-        .experience-timeline::before {
-            content: "";
-            position: absolute;
-            left: 18px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: #126b4f;
-        }
-
-        .experience-item {
-            position: relative;
-            padding-left: 55px;
-            margin-bottom: 40px;
-        }
-
-        .experience-dot {
-            position: absolute;
-            left: 7px;
-            top: 8px;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: #126b4f;
-            border: 5px solid #e9f8f1;
-            z-index: 2;
-        }
-
-        .experience-card {
-            background: white;
-            padding: 28px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-            border-left: 4px solid #126b4f;
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 15px;
-        }
-
-        .experience-header h3 {
-            color: #123c2f;
-            font-size: 21px;
-            margin-bottom: 6px;
-        }
-
-        .experience-header h4 {
-            color: #126b4f;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .experience-date {
-            background: #e9f8f1;
-            color: #126b4f;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-
-        .experience-card p {
-            color: #555;
-            font-size: 15px;
-            margin-bottom: 12px;
-        }
-
-        .experience-card ul {
-            padding-left: 20px;
-            color: #555;
-        }
-
-        .experience-card li {
-            margin-bottom: 8px;
-        }
-
-        .skills {
-            margin-top: 15px;
-            color: #126b4f;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        /* =========================
-           EDUCATION
-        ========================= */
-
-        #education {
-            background: #f7faf9;
-        }
-
-        /* =========================
-           RESEARCH
-        ========================= */
-
-        #research {
-            background: white;
-        }
-
-        .research-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .research-card {
-            background: #f7faf9;
-            padding: 30px;
-            border-radius: 10px;
-            border-top: 4px solid #126b4f;
-            transition: 0.3s;
-        }
-
-        .research-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        }
-
-        .research-card h3 {
-            color: #123c2f;
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-
-        .research-card p {
-            color: #555;
-            font-size: 15px;
-        }
-
-        /* =========================
-           PROJECTS
-        ========================= */
-
-        #projects {
-            background: #f7faf9;
-        }
-
-        .project-description {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.7;
-            margin-top: 15px;
-        }
-
-        .project-label {
-            display: inline-block;
-            margin-top: 18px;
-            padding: 6px 12px;
-            background: #e9f8f1;
-            color: #126b4f;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        .project-skills {
-            margin-top: 18px;
-            color: #555;
-            font-size: 14px;
-        }
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        #contact {
-            background: #123c2f;
-            color: white;
-        }
-
-        #contact .section-title {
-            color: white;
-        }
-
-        #contact .section-title::after {
-            background: white;
-        }
-
-        .contact-content {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .contact-content p {
-            color: #d8e9e2;
-            font-size: 17px;
-            margin-bottom: 25px;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            background: white;
-            color: #123c2f;
-            padding: 13px 20px;
-            border-radius: 7px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .contact-link:hover {
-            transform: translateY(-3px);
-            background: #e9f8f1;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            background: #0b281f;
-            color: #b8d2c8;
-            text-align: center;
-            padding: 22px;
-            font-size: 14px;
-        }
-
-        /* =========================
-           RESPONSIVE
-        ========================= */
-
-        @media (max-width: 900px) {
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-text p {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .research-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                gap: 14px;
-            }
-
-            .nav-links a {
-                font-size: 12px;
-            }
-        }
-
-        @media (max-width: 650px) {
-
-            .nav-container {
-                flex-direction: column;
-                padding: 15px 0;
-                gap: 10px;
-            }
-
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero {
-                padding-top: 150px;
-            }
-
-            .hero-text h1 {
-                font-size: 38px;
-            }
-
-            .hero-text h2 {
-                font-size: 20px;
-            }
-
-            .hero-image img {
-                width: 240px;
-                height: 240px;
-            }
-
-            .section {
-                padding: 65px 0;
-            }
-
-            .section-title {
-                font-size: 30px;
-            }
-
-            .experience-header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .experience-date {
-                align-self: flex-start;
-            }
-
-            .experience-card {
-                padding: 22px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
-    <nav>
-        <div class="nav-container">
+<header class="navbar">
 
-            <div class="logo">
-                Muhammad Imran
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            MI<span>.</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <a href="#contact" class="nav-button">
+            Let's Connect
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span></span>
+                BIOTECHNOLOGY RESEARCHER
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <h1>
+                Exploring
+                <em>Microalgae</em>
+                for a Sustainable Future.
+            </h1>
+
+            <p class="hero-description">
+                M.Phil. researcher working at the intersection of
+                microalgal biotechnology, algae-based biostimulants,
+                sustainable agriculture, carbon capture and environmental
+                biotechnology.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#research" class="btn btn-primary">
+                    Explore Research
+                    <span>↗</span>
+                </a>
+
+                <a href="cv.pdf" class="btn btn-secondary" target="_blank">
+                    Download CV
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+            <div class="hero-tags">
+
+                <span>Microalgae</span>
+                <span>Biostimulants</span>
+                <span>Sustainable Agriculture</span>
+                <span>Carbon Capture</span>
+
+            </div>
 
         </div>
-    </nav>
 
 
-    <!-- =========================
-         HERO / HOME
-    ========================= -->
+        <div class="hero-visual">
 
-    <section id="home" class="hero">
+            <div class="hero-image-frame">
 
-        <div class="container hero-content">
+                <img src="images/profile.jpg"
+                     alt="Muhammad Imran - Biotechnology Researcher">
 
-            <div class="hero-text">
+            </div>
 
-                <h1>Muhammad Imran</h1>
+            <div class="hero-card hero-card-top">
 
-                <h2>Biotechnology Researcher</h2>
+                <strong>M.Phil.</strong>
+                <span>Biotechnology</span>
 
-                <p>
-                    Biotechnology researcher specializing in microalgae,
-                    sustainable agriculture, environmental biotechnology,
-                    biostimulants, and sustainable resource utilization.
-                </p>
+            </div>
 
-                <div class="hero-buttons">
+            <div class="hero-card hero-card-bottom">
 
-                    <a href="#research" class="btn btn-primary">
-                        View My Research
-                    </a>
+                <span class="status-dot"></span>
 
-                    <a href="#contact" class="btn btn-outline">
-                        Let's Connect
-                    </a>
-
+                <div>
+                    <strong>Research Focus</strong>
+                    <small>Microalgal Biotechnology</small>
                 </div>
 
             </div>
 
+        </div>
 
-            <div class="hero-image">
+    </div>
 
-                <img
-                    src="./1789200486336.jpg"
-                    alt="Muhammad Imran"
-                >
+</section>
 
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about" class="about section">
+
+    <div class="container">
+
+        <div class="section-intro">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <span class="section-label">ABOUT ME</span>
+
+                <h2>
+                    Biotechnology research driven by
+                    <span>sustainability.</span>
+                </h2>
             </div>
 
         </div>
 
-    </section>
 
+        <div class="about-grid">
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
+            <div class="about-text">
 
-    <section id="about" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                About Me
-            </h2>
-
-            <div class="about-content">
-
-                <p>
-                    I am a Biotechnology researcher with an academic and
-                    research background in Industrial and Environmental
-                    Biotechnology.
+                <p class="lead-text">
+                    I am a Biotechnology researcher with an academic
+                    background in Industrial and Environmental Biotechnology,
+                    currently pursuing an M.Phil. at Government College
+                    University, Faisalabad.
                 </p>
 
                 <p>
-                    My current research focuses on indigenous microalgae,
+                    My research interests center on indigenous microalgae,
                     microalgal cultivation, biomass processing, extraction,
-                    and the development of microalgae-based biostimulants
-                    for sustainable agriculture.
+                    biochemical profiling and the development of
+                    algae-based biostimulants for sustainable agriculture.
                 </p>
 
                 <p>
                     I am also interested in environmental biotechnology,
-                    carbon capture, sustainable resource recovery,
-                    antimicrobial applications, and circular bioeconomy
-                    approaches.
+                    carbon capture, sustainable resource recovery and
+                    circular bioeconomy approaches that connect biological
+                    systems with real-world sustainability challenges.
                 </p>
 
-                <div class="about-highlight">
 
-                    <strong>Research Interests:</strong>
+                <!-- LAB PHOTOS DIRECTLY AFTER ABOUT TEXT -->
 
-                    Microalgae • Microalgal Biostimulants • Sustainable
-                    Agriculture • Environmental Biotechnology • Carbon
-                    Capture • Circular Bioeconomy
+                <div class="about-gallery">
 
-                </div>
+                    <div class="gallery-item gallery-large">
 
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         EXPERIENCE
-    ========================= -->
-
-    <section id="experience" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Experience
-            </h2>
-
-            <div class="experience-timeline">
-
-
-                <!-- EXPERIENCE 1 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Graduate Student Researcher
-                                </h3>
-
-                                <h4>
-                                    Bioenergy Research Centre
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Sep 2025 – Present
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>Full-time · On-site</strong>
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Conducting research on indigenous microalgal
-                                strains for sustainable agricultural
-                                applications.
-                            </li>
-
-                            <li>
-                                Working on algae-based biostimulants,
-                                including microalgal cultivation, biomass
-                                processing, extraction, and evaluation.
-                            </li>
-
-                            <li>
-                                Exploring microalgae for carbon capture,
-                                sustainable resource recovery, and circular
-                                bioeconomy applications.
-                            </li>
-
-                            <li>
-                                Gaining hands-on experience in microalgal
-                                cultivation, harvesting, biochemical
-                                analysis, and research experimentation.
-                            </li>
-
-                        </ul>
-
-                        <div class="skills">
-                            Skills: Microscopy · Microalgae Cultivation
-                            · Microalgae Based Biostimulants
-                        </div>
+                        <img src="images/lab-1.jpg"
+                             alt="Biotechnology research laboratory">
 
                     </div>
 
-                </div>
+                    <div class="gallery-item">
 
-
-                <!-- EXPERIENCE 2 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Research Intern
-                                </h3>
-
-                                <h4>
-                                    YFDP PAK
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Jul 2026 · 1 mo
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>
-                                Internship · Punjab, Pakistan
-                            </strong>
-                        </p>
-
-                        <p>
-                            Completed a 3-Day Virtual Internship on
-                            “Sales & Marketing in Food, Agriculture &
-                            other Sectors in Pakistan.”
-                        </p>
+                        <img src="images/lab-2.jpg"
+                             alt="Research laboratory environment">
 
                     </div>
 
-                </div>
+                    <div class="gallery-item">
 
-
-                <!-- EXPERIENCE 3 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Lead Biologist
-                                </h3>
-
-                                <h4>
-                                    Akbar Associates Group
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Oct 2024 – Sep 2025
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>
-                                Full-time · On-site · Islamabad, Pakistan
-                            </strong>
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Review and evaluate results of microbiological
-                                tests.
-                            </li>
-
-                            <li>
-                                Recommend and outline investigative actions.
-                            </li>
-
-                            <li>
-                                Schedule and supervise the collection of
-                                samples in the field.
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
-                <!-- EXPERIENCE 4 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Research Project
-                                </h3>
-
-                                <h4>
-                                    Government College University,
-                                    Faisalabad
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Sep 2020 – Aug 2024
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>
-                                Full-time · On-site · Punjab, Pakistan
-                            </strong>
-                        </p>
-
-                        <p>
-                            Biological Synthesis of ZnO Nanoparticles from
-                            Olive Leaves Extract and Evaluation of their
-                            Antimicrobial Activity against
-                            Pseudomonas aeruginosa.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- EXPERIENCE 5 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Research Intern
-                                </h3>
-
-                                <h4>
-                                    Ayub Agricultural Research Institute
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Aug 2023 – Sep 2023
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>
-                                Full-time · Punjab, Pakistan
-                            </strong>
-                        </p>
-
-                        <div class="skills">
-                            Skills: Polymerase Chain Reaction (PCR) ·
-                            SDS-PAGE · Molecular Biology
-                        </div>
+                        <img src="images/lab-3.jpg"
+                             alt="Biological research laboratory">
 
                     </div>
 
@@ -963,332 +220,48 @@
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="about-side">
 
+                <div class="about-profile-card">
 
-    <!-- =========================
-         EDUCATION
-    ========================= -->
-
-    <section id="education" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Education
-            </h2>
-
-            <div class="experience-timeline">
-
-
-                <!-- EDUCATION 1 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Master of Philosophy (MPhil)
-                                </h3>
-
-                                <h4>
-                                    Industrial and Environmental
-                                    Biotechnology
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Sep 2025 – Sep 2027
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>
-                                Government College University,
-                                Faisalabad
-                            </strong>
-                        </p>
-
-                        <p>
-                            Activities and Societies:
-                            BioEcoTech Research Cluster
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- EDUCATION 2 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Bachelor of Science (BS)
-                                </h3>
-
-                                <h4>
-                                    Biotechnology
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Sep 2020 – Sep 2024
-                            </span>
-
-                        </div>
-
-                        <p>
-                            <strong>
-                                Government College University,
-                                Faisalabad
-                            </strong>
-                        </p>
-
-                        <p>
-                            Grade: <strong>3.64 / 4</strong>
-                        </p>
-
-                        <p>
-                            Activities and Societies:
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                UN Youth Climate Ambassador
-                            </li>
-
-                            <li>
-                                SPSC Ambassador / Member
-                            </li>
-
-                            <li>
-                                Member of Global Youth Biodiversity Network
-                            </li>
-
-                            <li>
-                                Event Coordinator of Read Pakistan Club
-                                GCUF Chapter
-                            </li>
-
-                            <li>
-                                Event Coordinator Green Youth Movement
-                                Club GCUF
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         RESEARCH
-    ========================= -->
-
-    <section id="research" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Research
-            </h2>
-
-            <div class="research-grid">
-
-
-                <!-- RESEARCH CARD 1 -->
-
-                <div class="research-card">
+                    <span class="card-label">CURRENT POSITION</span>
 
                     <h3>
-                        Microalgae & Biostimulants
+                        M.Phil. Researcher
                     </h3>
 
                     <p>
-                        Research focused on indigenous microalgae and their
-                        potential applications as biostimulants for
-                        sustainable agriculture, plant growth, and nutrient
-                        efficiency.
+                        Industrial & Environmental Biotechnology
                     </p>
 
-                </div>
+                    <div class="card-divider"></div>
 
+                    <span class="card-label">INSTITUTION</span>
 
+                    <strong>
+                        Government College University,
+                        Faisalabad
+                    </strong>
 
-
-                
-
-                <!-- RESEARCH CARD 2 -->
-
-                <div class="research-card">
-
-                    <h3>
-                        Environmental Biotechnology
-                    </h3>
-
-                    <p>
-                        Exploring biotechnology-based approaches for
-                        environmental sustainability, carbon capture,
-                        resource recovery, and circular bioeconomy
-                        applications.
-                    </p>
+                    <span class="card-year">
+                        2025 — 2027
+                    </span>
 
                 </div>
 
 
-                
+                <div class="research-mini-card">
 
-    </section>
+                    <span class="mini-icon">✦</span>
 
+                    <div>
 
-    <!-- =========================
-         PROJECTS
-    ========================= -->
+                        <strong>Research Direction</strong>
 
-    <section id="projects" class="section">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Projects
-            </h2>
-
-            <div class="experience-timeline">
-
-
-                <!-- PROJECT 1 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Assessing the Biostimulant Activity of
-                                    Indigenous Microalgal Extract for
-                                    Sustainable Agriculture
-                                </h3>
-
-                                <h4>
-                                    Microalgal Biotechnology
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                2025 – 2026
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-                            Investigating the biostimulant potential of
-                            indigenous microalgal extract for sustainable
-                            agriculture, focusing on extract preparation,
-                            and its effects on plant growth and nutrient
-                            efficiency.
-                        </p>
-
-                        <span class="project-label">
-                            Microalgae Cultivation & Microalgae Based
-                            Biostimulants
-                        </span>
-
-                        <p class="project-skills">
-                            <strong>Focus:</strong>
-                            Indigenous microalgal extracts,
-                            biostimulants, plant growth, nutrient
-                            efficiency, and sustainable agriculture.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROJECT 2 -->
-
-                <div class="experience-item">
-
-                    <div class="experience-dot"></div>
-
-                    <div class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3>
-                                    Biological Synthesis of ZnO Nanoparticles
-                                    from Olive Leaves Extract and Evaluation
-                                    of their Antimicrobial Effect against
-                                    Pseudomonas aeruginosa
-                                </h3>
-
-                                <h4>
-                                    Nanobiotechnology & Antimicrobial Research
-                                </h4>
-
-                            </div>
-
-                            <span class="experience-date">
-                                Mar 2024 – Jun 2024
-                            </span>
-
-                        </div>
-
-                        <p class="project-description">
-                            During this project Olive Leaves are used
-                            instead of chemicals that are more toxic for
-                            humans as well as for the environment. These
-                            Nanoparticles are used against
-                            Pseudomonas aeruginosa that resist Multiple
-                            antibiotics but in our project their growth
-                            was inhibited.
-                        </p>
-
-                        <span class="project-label">
-                            Green Synthesis & Antimicrobial Activity
-                        </span>
-
-                        <p class="project-skills">
-                            <strong>Focus:</strong>
-                            Olive leaf extract, ZnO nanoparticles,
-                            biological synthesis, antimicrobial activity,
-                            and Pseudomonas aeruginosa.
+                        <p>
+                            Microalgae → Biostimulants →
+                            Sustainable Agriculture
                         </p>
 
                     </div>
@@ -1299,67 +272,910 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+<!-- =====================================================
+     RESEARCH
+===================================================== -->
 
-    <section id="contact" class="section">
+<section id="research" class="research section">
 
-        <div class="container">
+    <div class="container">
 
-            <h2 class="section-title">
-                Let's Connect
-            </h2>
+        <div class="section-intro">
 
-            <div class="contact-content">
+            <span class="section-number">02</span>
+
+            <div>
+
+                <span class="section-label">RESEARCH</span>
+
+                <h2>
+                    Research interests at the
+                    <span>microalgae–sustainability</span> interface.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="research-grid">
+
+            <article class="research-card featured">
+
+                <div class="research-card-number">
+                    01
+                </div>
+
+                <div class="research-icon">
+                    ◉
+                </div>
+
+                <h3>
+                    Algae-Based
+                    Biostimulants
+                </h3>
 
                 <p>
-                    I am open to research collaborations, academic
-                    opportunities, biotechnology projects, and
+                    Exploring microalgal extracts and their potential
+                    applications in sustainable agriculture, plant growth
+                    and nutrient efficiency.
+                </p>
+
+                <div class="research-keywords">
+                    Extracts · Plant Growth · Nutrient Efficiency
+                </div>
+
+            </article>
+
+
+            <article class="research-card">
+
+                <div class="research-card-number">
+                    02
+                </div>
+
+                <div class="research-icon">
+                    ◌
+                </div>
+
+                <h3>
+                    Indigenous
+                    Microalgae
+                </h3>
+
+                <p>
+                    Interest in indigenous microalgal diversity,
+                    cultivation, screening and characterization for
+                    sustainable biotechnology applications.
+                </p>
+
+                <div class="research-keywords">
+                    Strain Screening · Cultivation · Characterization
+                </div>
+
+            </article>
+
+
+            <article class="research-card">
+
+                <div class="research-card-number">
+                    03
+                </div>
+
+                <div class="research-icon">
+                    ◈
+                </div>
+
+                <h3>
+                    Biochemical
+                    Profiling
+                </h3>
+
+                <p>
+                    Investigating biochemical characteristics of microalgal
+                    biomass relevant to high-value agricultural and
+                    environmental applications.
+                </p>
+
+                <div class="research-keywords">
+                    Proteins · Pigments · Metabolites
+                </div>
+
+            </article>
+
+
+            <article class="research-card">
+
+                <div class="research-card-number">
+                    04
+                </div>
+
+                <div class="research-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    Carbon Capture &
+                    Resource Recovery
+                </h3>
+
+                <p>
+                    Exploring microalgae within environmental biotechnology,
+                    carbon capture and circular resource recovery systems.
+                </p>
+
+                <div class="research-keywords">
+                    Carbon Capture · Circular Bioeconomy
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RESEARCH APPROACH
+===================================================== -->
+
+<section class="approach section">
+
+    <div class="container">
+
+        <div class="approach-layout">
+
+            <div class="approach-heading">
+
+                <span class="section-label">
+                    RESEARCH APPROACH
+                </span>
+
+                <h2>
+                    From biological
+                    <span>diversity</span>
+                    to application.
+                </h2>
+
+            </div>
+
+
+            <div class="approach-flow">
+
+                <div class="flow-item">
+
+                    <span>01</span>
+
+                    <h3>
+                        Strain
+                        Screening
+                    </h3>
+
+                    <p>
+                        Identification and evaluation of indigenous
+                        microalgal strains.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-line"></div>
+
+
+                <div class="flow-item">
+
+                    <span>02</span>
+
+                    <h3>
+                        Biomass &
+                        Biochemistry
+                    </h3>
+
+                    <p>
+                        Cultivation, biomass processing and biochemical
+                        characterization.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-line"></div>
+
+
+                <div class="flow-item">
+
+                    <span>03</span>
+
+                    <h3>
+                        Extraction &
+                        Bioactivity
+                    </h3>
+
+                    <p>
+                        Exploring extraction strategies and biological
+                        activity of microalgal biomass.
+                    </p>
+
+                </div>
+
+
+                <div class="flow-line"></div>
+
+
+                <div class="flow-item">
+
+                    <span>04</span>
+
+                    <h3>
+                        Sustainable
+                        Application
+                    </h3>
+
+                    <p>
+                        Connecting biological resources with sustainable
+                        agricultural applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience" class="experience section">
+
+    <div class="container">
+
+        <div class="section-intro">
+
+            <span class="section-number">03</span>
+
+            <div>
+
+                <span class="section-label">EXPERIENCE</span>
+
+                <h2>
+                    Academic and
+                    <span>professional journey.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2025 — Present
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-type">
+                        RESEARCH
+                    </span>
+
+                    <h3>
+                        M.Phil. Researcher
+                    </h3>
+
+                    <h4>
+                        BioEcoTech Research Cluster · GCUF
+                    </h4>
+
+                    <p>
+                        Working in microalgal biotechnology with interests
+                        in indigenous strains, algae-based biostimulants,
+                        sustainable agriculture, environmental biotechnology
+                        and resource recovery.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2024 — 2025
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-type">
+                        PROFESSIONAL
+                    </span>
+
+                    <h3>
+                        Lead Biologist
+                    </h3>
+
+                    <h4>
+                        Akbar Associates Group
+                    </h4>
+
+                    <p>
+                        Worked with microbiological testing, sample
+                        collection, result evaluation and investigative
+                        activities in a professional biological testing
+                        environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-date">
+                    2023
+                </div>
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-type">
+                        RESEARCH INTERNSHIP
+                    </span>
+
+                    <h3>
+                        Research Intern
+                    </h3>
+
+                    <h4>
+                        Ayub Agricultural Research Institute
+                    </h4>
+
+                    <p>
+                        Gained practical exposure to molecular biology,
+                        microbiology and laboratory research techniques.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section id="education" class="education section">
+
+    <div class="container">
+
+        <div class="section-intro">
+
+            <span class="section-number">04</span>
+
+            <div>
+
+                <span class="section-label">EDUCATION</span>
+
+                <h2>
+                    Academic
+                    <span>foundation.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-grid">
+
+
+            <div class="education-card current">
+
+                <div class="education-top">
+
+                    <span class="education-status">
+                        CURRENT
+                    </span>
+
+                    <span class="education-year">
+                        2025 — 2027
+                    </span>
+
+                </div>
+
+                <h3>
+                    Master of Philosophy
+                </h3>
+
+                <h4>
+                    Industrial & Environmental Biotechnology
+                </h4>
+
+                <p>
+                    Government College University,
+                    Faisalabad
+                </p>
+
+                <div class="education-line"></div>
+
+                <span>
+                    BioEcoTech Research Cluster
+                </span>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="education-top">
+
+                    <span class="education-status">
+                        COMPLETED
+                    </span>
+
+                    <span class="education-year">
+                        2020 — 2024
+                    </span>
+
+                </div>
+
+                <h3>
+                    Bachelor of Science
+                </h3>
+
+                <h4>
+                    Biotechnology
+                </h4>
+
+                <p>
+                    Government College University,
+                    Faisalabad
+                </p>
+
+                <div class="education-line"></div>
+
+                <strong class="cgpa">
+                    CGPA 3.64 / 4.00
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section id="projects" class="projects section">
+
+    <div class="container">
+
+        <div class="section-intro">
+
+            <span class="section-number">05</span>
+
+            <div>
+
+                <span class="section-label">PROJECTS</span>
+
+                <h2>
+                    Selected
+                    <span>research projects.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <article class="project-card project-main">
+
+                <div class="project-meta">
+                    <span>MICROALGAL BIOTECHNOLOGY</span>
+                    <span>2025 — 2026</span>
+                </div>
+
+                <h3>
+                    Assessing the Biostimulant Activity
+                    of Indigenous Microalgal Extract
+                    for Sustainable Agriculture
+                </h3>
+
+                <p>
+                    Exploring the potential of indigenous microalgal
+                    extracts for sustainable agricultural applications,
+                    with emphasis on extract preparation, plant growth
+                    and nutrient efficiency.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Microalgae</span>
+                    <span>Biostimulants</span>
+                    <span>Plant Growth</span>
+                    <span>Sustainable Agriculture</span>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-meta">
+                    <span>NANOBIOTECHNOLOGY</span>
+                    <span>2024</span>
+                </div>
+
+                <h3>
+                    Green Synthesis of ZnO Nanoparticles
+                </h3>
+
+                <p>
+                    Biological synthesis of ZnO nanoparticles using
+                    olive leaf extract and evaluation of antimicrobial
+                    activity against Pseudomonas aeruginosa.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Green Synthesis</span>
+                    <span>ZnO Nanoparticles</span>
+                    <span>Antimicrobial Research</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="skills section">
+
+    <div class="container">
+
+        <div class="skills-layout">
+
+            <div>
+
+                <span class="section-label">
+                    TECHNICAL EXPERTISE
+                </span>
+
+                <h2>
+                    Laboratory skills supporting
+                    <span>biotechnology research.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-list">
+
+                <div class="skill-row">
+
+                    <span>01</span>
+
+                    <div>
+                        <strong>
+                            Molecular Biotechnology
+                        </strong>
+
+                        <p>
+                            DNA/RNA extraction · PCR · Real-time PCR ·
+                            Gel electrophoresis
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <span>02</span>
+
+                    <div>
+                        <strong>
+                            Microbiology
+                        </strong>
+
+                        <p>
+                            Microbial isolation · Culture preparation ·
+                            Media preparation · Microbiological analysis
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <span>03</span>
+
+                    <div>
+                        <strong>
+                            Microalgal Biotechnology
+                        </strong>
+
+                        <p>
+                            Microalgal cultivation · Biomass processing ·
+                            Extraction · Biochemical profiling
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <span>04</span>
+
+                    <div>
+                        <strong>
+                            Sustainability
+                        </strong>
+
+                        <p>
+                            Carbon capture · Sustainable agriculture ·
+                            Resource recovery · Circular bioeconomy
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACHIEVEMENT
+===================================================== -->
+
+<section class="achievement section">
+
+    <div class="container">
+
+        <div class="achievement-box">
+
+            <div class="achievement-mark">
+                ★
+            </div>
+
+            <div class="achievement-content">
+
+                <span>
+                    RESEARCH & INNOVATION RECOGNITION
+                </span>
+
+                <h2>
+                    Silver Award
+                </h2>
+
+                <h3>
+                    China International College Students'
+                    Innovation Competition 2025
+                </h3>
+
+                <p>
+                    Shanghai Track · BioEcoTech 4.0 —
+                    Algae-based Innovation
+                </p>
+
+            </div>
+
+            <div class="achievement-year">
+                2025
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact" class="contact section">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="contact-heading">
+
+                <span class="section-label">
+                    LET'S CONNECT
+                </span>
+
+                <h2>
+                    Interested in
+                    <span>research collaboration?</span>
+                </h2>
+
+                <p>
+                    I am open to academic opportunities, research
+                    collaborations, biotechnology projects and
                     professional connections.
                 </p>
 
-                <div class="contact-links">
+            </div>
 
-                    <a
-                        class="contact-link"
-                        href="mailto:mimran.202003043@gcuf.edu.pk"
-                    >
-                        Email Me
-                    </a>
 
-                    <a
-                        class="contact-link"
-                        href="https://www.linkedin.com/in/muhammad-imran01/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
+            <div class="contact-links">
 
-                </div>
+                <a href="mailto:mimran.202003043@gcuf.edu.pk"
+                   class="contact-link">
+
+                    <span class="contact-icon">
+                        @
+                    </span>
+
+                    <div>
+                        <small>EMAIL</small>
+                        <strong>
+                            mimran.202003043@gcuf.edu.pk
+                        </strong>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/muhammad-imran01/"
+                   target="_blank"
+                   rel="noopener"
+                   class="contact-link">
+
+                    <span class="contact-icon">
+                        in
+                    </span>
+
+                    <div>
+                        <small>LINKEDIN</small>
+                        <strong>
+                            Muhammad Imran
+                        </strong>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-    <footer>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            MI<span>.</span>
+        </div>
 
         <p>
-            © 2026 Muhammad Imran. All Rights Reserved.
+            Biotechnology · Microalgae · Sustainability
         </p>
 
-    </footer>
+        <span>
+            © 2026 Muhammad Imran
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+    /* Smooth navigation */
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+        anchor.addEventListener("click", function(e) {
+
+            const target = document.querySelector(
+                this.getAttribute("href")
+            );
+
+            if (target) {
+
+                e.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
+        });
+
+    });
+
+
+    /* Navbar shadow */
+
+    window.addEventListener("scroll", function() {
+
+        const navbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 30) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+        }
+
+    });
+
+</script>
 
 </body>
 </html>
